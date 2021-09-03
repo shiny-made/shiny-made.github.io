@@ -3,6 +3,31 @@
 
 @import "{{ site.theme }}";
 
+
+html
+{
+    background-color: black;
+    color: #82443d;
+}
+
 h1{
     color: black;
 }
+.main-content
+{
+    margin-left: 0;
+}
+
+.project-name
+{
+    text-align: left;
+}
+
+
+#project-tagline{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 40px;    
+}
+
