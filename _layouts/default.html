@@ -21,7 +21,15 @@
         </h2>
       </div>
       <h2 style = "margin: 0;"> {{page.subtitle}} </h2>
-      {{ content }} {% if page.previous %}
+      {{ content }} 
+      
+      <div style="font-weight: 900; width: 65%; padding: 10px 0 10px 0; color: black; background-color: #17b2d1; border-top-left-radius: 2em 2em; border-bottom-left-radius: 2em 2em; border-bottom-right-radius: 100%; border-top-right-radius: 100%; cursor: pointer;" onclick="location.href= 'https://www.patreon.com/ShinyTL';">
+        <!-- <a href="https://ibb.co/DWsR4wn"> -->
+        <img src="https://i.ibb.co/DWsR4wn/Digital-Patreon-Logo-Black.png" alt="Digital-Patreon-Logo-Black" style="height: 20px; width: 20px; margin-right: 10px; margin-left: 20px;" border="0"> 
+        <p style="display: inline-block;">Read Ahead on Patreon. Support Shiny!!!</p>
+        </div>
+      <br/>
+      {% if page.previous %}
       <a href="{{ page.previous.url }}" class="btn">Previous</a>
       {% endif %} {% if page.next %}
       <a href="{{ page.next.url }}" id="next" class="btn">Next</a>
