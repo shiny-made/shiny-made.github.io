@@ -1,11 +1,12 @@
 ---
 layout: default
-title:  "Commoner White Mage"
-description: "Chapter 1"
-date:   2021-09-04 02:46:52 +0530
+title: "Commoner White Mage"
+description: "1"
+date: 2021-09-04 02:46:52 +0530
 categories: jekyll update
 permalink: "chapter-1"
 ---
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum mattis ullamcorper velit sed ullamcorper morbi. Commodo nulla facilisi nullam vehicula ipsum a arcu. Arcu odio ut sem nulla pharetra diam. Turpis egestas maecenas pharetra convallis. At varius vel pharetra vel turpis nunc eget lorem. A scelerisque purus semper eget duis at tellus at. Dui id ornare arcu odio ut sem nulla pharetra diam. In arcu cursus euismod quis viverra nibh cras pulvinar mattis. Metus vulputate eu scelerisque felis. Est ante in nibh mauris cursus mattis molestie.
 
 Urna porttitor rhoncus dolor purus non. Sed felis eget velit aliquet sagittis id consectetur purus ut. Vel quam elementum pulvinar etiam non quam lacus. Massa ultricies mi quis hendrerit dolor magna. Maecenas pharetra convallis posuere morbi leo urna. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Arcu dictum varius duis at consectetur lorem donec massa sapien. Quis varius quam quisque id diam. Aliquam ultrices sagittis orci a scelerisque purus semper eget duis. Facilisis magna etiam tempor orci eu lobortis elementum nibh. Fames ac turpis egestas integer eget aliquet nibh praesent tristique. Magna ac placerat vestibulum lectus mauris ultrices eros in. Turpis egestas maecenas pharetra convallis posuere morbi leo urna molestie. Sem integer vitae justo eget. Id velit ut tortor pretium viverra suspendisse.
