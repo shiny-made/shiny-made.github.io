@@ -5,7 +5,7 @@ description: "1"
 subtitle: "Prologue"
 date: 2021-09-04 02:46:52 +0530
 categories: jekyll update
-permalink: "chapter-1"
+permalink: "cwm-prologue"
 ---
 
 Magic.
