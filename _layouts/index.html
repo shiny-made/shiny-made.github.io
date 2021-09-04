@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Copse&display=swap" rel="stylesheet" />
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/2c2aaca7e9.js" crossorigin="anonymous"></script>
+    {% seo %}
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap"
+      as="style"
+      type="text/css"
+      crossorigin
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#157878" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"
+    />
+    {% include head-custom.html %}
+    <link rel="icon" href="assets/favicon.ico" />
+  </head>
+  <body>
+    <header class="page-header" role="banner">
+        <img height="420" width="315" class= "banner-image" src= "/assets/images/cwm.jpg"/>
+      <a href= "/">
+        <h1 class="project-name">
+        {{ page.title | default: site.title | default: site.github.repository_name }}
+      </h1>
+    </a>
+    </header>
+    <main id="content" class="main-content" role="main">
+     
+    </main>     
+
+  </body>
+</html>
