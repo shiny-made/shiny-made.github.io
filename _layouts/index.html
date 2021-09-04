@@ -37,7 +37,18 @@
     </a>
     </header>
     <main id="content" class="main-content" role="main">
-     
+
+    <div class="info">
+        <h2><em>Translator: Shiny❤️</em></h2>
+        <h3>Lastest Release ~ Chapter {{site.posts[0].description}}- {{site.posts[0].subtitle}}</h3>
+    </div>
+    <p style= "margin-top: 180px;">{{content}}</p>
+    <h2><strong>Table of Contents<strong></h2>
+    <div class= "toc">
+        {% for item in site.posts reversed%}
+    <a href= "{{item.url}}"><p style= "margin: 0; clear: left;">{{item.description}}. {{item.subtitle}}</p></a><br/>
+     {%endfor%}
+        </div>
     </main>     
 
   </body>

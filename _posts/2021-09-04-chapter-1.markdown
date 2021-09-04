@@ -2,6 +2,7 @@
 layout: default
 title: "Commoner White Mage"
 description: "1"
+subtitle: "Subtitle 1"
 date: 2021-09-04 02:46:52 +0530
 categories: jekyll update
 permalink: "chapter-1"
