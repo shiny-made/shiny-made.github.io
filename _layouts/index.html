@@ -1,7 +1,7 @@
 {% include header.html %}
     <header class="page-header" role="banner">
-        <img height="420" width="315" class= "banner-image" src= "/assets/images/cwm.jpg"/>
-      <a href= "/">
+        <img class= "banner-image" src= "/assets/images/cwm.jpg"/>
+         <a href= "/">
         <h1 class="project-name">
         {{ page.title | default: site.title | default: site.github.repository_name }}
       </h1>
@@ -9,11 +9,11 @@
     </header>
     <main id="content" class="main-content" role="main">
 
-    <div class="info">
+    <div id="info">
         <h2><em>Translator: Shiny❤️</em></h2>
         <h3>Lastest Release ~ Chapter {{site.posts[0].description}}- {{site.posts[0].subtitle}}</h3>
     </div>
-    <p style= "margin-top: 180px;">{{content}}</p>
+    <p class= "synopsis">{{content}}</p>
     <h2><strong>Table of Contents<strong></h2>
     <div class= "toc">
         {% for item in site.posts reversed%}

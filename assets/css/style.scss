@@ -38,7 +38,7 @@ h1 {
 }
 
 #next {
-  margin-left: 650px;
+  margin-left: 200px;
 }
 
 .chapter-container {
@@ -55,8 +55,8 @@ h1 {
 }
 
 .side-nav{
-  height: 35%;
-  width: 5%;
+  height: 26%;
+  width: 4%;
   position: fixed;
   left: 1%;
   top: 1%;
@@ -73,8 +73,6 @@ h1 {
     color: #606c71;
  
 }
-
-
 .fas
 {
   font-size: 30px;
@@ -95,9 +93,15 @@ h1 {
 
 .banner-image{
   float: left; margin: 0 20px;
+  height: 420px;
+  width: 315px;
+  border: solid rgb(0,50%,50%) 10px;
+  border-radius: 20px;
+  box-shadow: -10px -10px 10px black;
 }
 
-.info{
+
+#info{
   margin: 0 0 0 400px;
   
 }
@@ -106,3 +110,90 @@ h1 {
   clear: right;
 }
 
+.synopsis{
+  margin-top: 180px;
+}
+
+@media screen and (max-width: 1400px){
+
+  .synopsis{
+    margin-top: 250px;
+  }
+  .side-nav{
+    width: 5%;
+    height: 32%;
+  }
+}
+
+@media screen and (max-width: 780px){
+.synopsis{
+  margin-top: 150px;
+}
+.side-nav{
+  width: 6%;
+  height: 40%;
+}
+
+}
+
+@media screen and (max-width: 430px)
+{
+  .banner-image{
+    height: 210px;
+    width: 160px;
+    border-width: 5px;
+  }
+  #info
+  {
+    margin-left: 0;
+  }
+  .synopsis{
+    margin-top: 50px;
+  }
+  .side-nav{
+   opacity: 0.1;
+   width: 10%;
+   right: 0;
+   left: 360px;
+
+  }
+  #next
+  {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 380px)
+{
+  .banner-image{
+    width: 230px;
+    height: 300px;
+    position: absolute;
+    top: 90px;
+    left: 0;
+  }
+  .main-content :first-child {
+    margin-top: 10px;
+}
+#info
+{
+  margin-top: 300px;
+}
+  .side-nav{
+    width: 15%;
+    height: 40%;
+    left: 0;
+  }
+  .chapter-container{
+    left: 0;
+    top: -40px;
+  }
+}
+
+@media screen and (max-width: 330px)
+{
+  .banner-image{
+    top: 130px;
+  }
+
+
+}
