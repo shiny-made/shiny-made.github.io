@@ -31,6 +31,12 @@
       <h2 id="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
      
       {{ content }}
+      {% if page.previous %}
+        <a href="{{ page.previous.url }}" class="btn">Previous</a>
+      {% endif %}
+      {% if page.next %}
+        <a href="{{ page.next.url }}" id="next" class="btn">Next</a>
+      {% endif %}
 
       <!-- <footer class="site-footer">
         {% if site.github.is_project_page %}
