@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Commoner White Mage"
-description: "1"
+description: "0"
 subtitle: "Prologue"
 date: 2021-09-04 02:46:52 +0530
 categories: Commoner White Mage

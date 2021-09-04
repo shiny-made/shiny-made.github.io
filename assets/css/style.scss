@@ -30,7 +30,8 @@ h1 {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 70px;
+  font-size: 60px;
+  line-height: 120px;
   color: black;
   font-family: "Copse", serif;
   font-weight: 400;
@@ -42,8 +43,8 @@ h1 {
 }
 
 .chapter-container {
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
   border-radius: 100%;
   position: relative;
   z-index: 3;
