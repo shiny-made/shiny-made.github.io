@@ -5,7 +5,7 @@ description: "1"
 subtitle: "I Banished Myself"
 date: 2021-09-04 02:46:52 +0530
 categories: the-banished-sage-who-escaped-his-childhood-friend
-permalink: ":categories/bs-c1"
+permalink: "bswehcf-c1"
 ---
 
 “Haru are you fucking kidding me? You imbecile! You cretin! Coward! You freaked out at the sight of such a weak monster adn even failed to chant any magic… what are you going to do? What were you thinking messing up with a small fry like that!?”
