@@ -495,3 +495,7 @@ table a, #comments a{background-color:inherit;}
 	.font-x2{font-size:1.4rem;}
 	.font-x3{font-size:1.6rem;}
 }
+
+p{
+	font-weight: 600;
+}
