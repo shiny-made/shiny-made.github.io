@@ -1,0 +1,26 @@
+{% include header.html %}
+    <header class="page-header" role="banner">
+        <img class= "banner-image" src= "/assets/images/cwm.jpg"/>
+         <a href= "/">
+        <h1 class="project-name">
+        {{ page.title | default: site.title | default: site.github.repository_name }}
+      </h1>
+    </a>
+    </header>
+    <main id="content" class="main-content" role="main">
+
+    <div id="info">
+        <h2><em>Translator: Shiny❤️</em></h2>
+        <h3><a href="{{site.posts[0].url}}">Lastest Release ~ Chapter {{site.posts[0].description}}- {{site.posts[0].subtitle}}</a></h3>
+    </div>
+    <p class= "synopsis">{{content}}</p>
+    <h2><strong>Table of Contents<strong></h2>
+    <div class= "toc">
+        {% for item in site.posts reversed%}
+    <a href= "{{item.url}}"><p style= "margin: 0; clear: left;">{{item.description}}. {{item.subtitle}}</p></a><br/>
+     {%endfor%}
+        </div>
+    </main>     
+
+  </body>
+</html>

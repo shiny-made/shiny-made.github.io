@@ -1,48 +1,143 @@
-{% include header.html %}
-
-    <header class="page-header" role="banner">
-      <a href= "/">
-        <h1 class="project-name">
-        {{ page.title | default: site.title | default: site.github.repository_name }}
-      </h1>
-    </a>
-      {% if site.github.is_project_page %}
-      <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      {% endif %} {% if site.show_downloads %}
-      <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-      <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-      {% endif %}
-    </header>
-
-    <main id="content" class="main-content" role="main">
-      <div class="chapter-container">
-        <h2 id="project-tagline">
-          {{ page.description | default: site.description | default: site.github.project_tagline }}
-        </h2>
-      </div>
-      <h2 style = "margin: 0;"> {{page.subtitle}} </h2>
-      {{ content }} 
-      
-      <div style="font-weight: 900; width: 65%; padding: 10px 0 10px 0; color: black; background-color: #17b2d1; border-top-left-radius: 2em 2em; border-bottom-left-radius: 2em 2em; border-bottom-right-radius: 100%; border-top-right-radius: 100%; cursor: pointer;" onclick="location.href= 'https://www.patreon.com/ShinyTL';">
-        <!-- <a href="https://ibb.co/DWsR4wn"> -->
-        <img src="https://i.ibb.co/DWsR4wn/Digital-Patreon-Logo-Black.png" alt="Digital-Patreon-Logo-Black" style="height: 20px; width: 20px; margin-right: 10px; margin-left: 20px;" border="0"> 
-        <p style="display: inline-block;">Read Ahead on Patreon. Support Shiny!!!</p>
-        </div>
-      <br/>
-      {% if page.previous %}
-      <a href="{{ page.previous.url }}" class="btn">Previous</a>
-      {% endif %} {% if page.next %}
-      <a href="{{ page.next.url }}" id="next" class="btn">Next</a>
-      {% endif %}
-
-      <!-- <footer class="site-footer">
-        {% if site.github.is_project_page %}
-          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+<!DOCTYPE html>
+<!--
+Template Name: Foxclore
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>shiny-made</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('assets/images/01.jpg');"> 
+  <!-- ################################################################################################ -->
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="one_quarter first">
+      <h1><a href="index.html"><img src="assets/images/Shiny Logo.png" style= "width: 75px; height: 75px;">Shiny Made </a></h1>
+     
+    </div>
+    
+    <!-- ################################################################################################ -->
+  </header>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <section id="navwrapper" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <nav id="mainav">
+      <ul class="clear">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a class="drop" href="#">Novels</a>
+          <ul>
+            <li><a href="/bs">The Bansished Sage Who Escaped his Childhood Friend</a></li>
+          </ul>
+        
+      </ul>
+    </nav>
+    <!-- ################################################################################################ -->
+    
+    <!-- ################################################################################################ -->
+  </section>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div id="breadcrumb" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <h6 class="heading"> C{{page.description}}~ {{page.subtitle}} </h6>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/bs">Banished Sage</a></li>
+      <li><a href="#">c{{page.description}}</a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content three_quarter first"> 
+      <!-- ################################################################################################ -->
+        {{ content }}
+      <!-- ################################################################################################ -->
+    </div>
+    
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+    <div>
+        {% if page.previous %}
+        <a href="{{ page.previous.url }}" class="btn">Previous</a>
+        {% endif %} {% if page.next %}
+        <a href="{{ page.next.url }}" class="btn">Next</a>
         {% endif %}
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
-      </footer> -->
-    </main>
-
+    </div>
     {% include disqus.html %}
-  </body>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="bgded overlay row4">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="center btmspace-50">
+      <h6 class="heading">Shiny Made</h6>
+      <ul class="faico clear">
+        <li><a class="faicon-dribble" href="#"><i class="fab fa-dribbble"></i></a></li>
+        <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
+      </ul>
+      <p class="nospace">Website under construction</p>
+    </div>
+    <!-- ################################################################################################ -->
+    <hr class="btmspace-50">
+    <!-- ################################################################################################ -->
+    
+   
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
+     <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="assets/scripts/jquery.min.js"></script>
+<script src="assets/scripts/jquery.backtotop.js"></script>
+<script src="assets/scripts/jquery.mobilemenu.js"></script>
+</body>
 </html>

@@ -1,10 +1,29 @@
 <!DOCTYPE html>
+<!--
+Template Name: Foxclore
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
 <html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
 <head>
 <title>shiny-made</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all">
+
+<style type="text/css">
+/* DEMO ONLY */
+.container .demo{text-align:center;}
+.container .demo div{padding:8px 0;}
+.container .demo div:nth-child(odd){color:#FFFFFF; background:#CCCCCC;}
+.container .demo div:nth-child(even){color:#FFFFFF; background:#979797;}
+@media screen and (max-width:900px){.container .demo div{margin-bottom:0;}}
+/* DEMO ONLY */
+</style>
+<link href="assets/css/style2.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body id="top">
 <!-- ################################################################################################ -->
@@ -26,7 +45,6 @@
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <section id="navwrapper" class="hoc clear"> 
-   
     <!-- ################################################################################################ -->
     <nav id="mainav">
       <ul class="clear">
@@ -45,13 +63,14 @@
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
-  <div id="pageintro" class="hoc clear"> 
+  <div id="breadcrumb" class="hoc clear"> 
     <!-- ################################################################################################ -->
-    <article>
-      <h3 class="heading">Shiny Made</h3>
-      <p>Where glittery delicacies are made</p>
-      
-    </article>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Lorem</a></li>
+      <li><a href="#">Ipsum</a></li>
+      <li><a href="#">Dolor</a></li>
+    </ul>
     <!-- ################################################################################################ -->
   </div>
   <!-- ################################################################################################ -->
@@ -66,14 +85,37 @@
     <!-- ################################################################################################ -->
     <section id="introblocks">
       <ul class="nospace group">
-        <li class="one_third">
-          <figure><a id="first_novel" class="imgover" href="#"><img src="assets/images/cover1.png" alt=""></a>
-            <figcaption>
-              <h6 class="heading">The Bansished Sage Who Escaped his Childhood Friend</h6>
-              <p>The wizard Haru spent his days being abused by the hero, his childhood friend Leticia. But one day while being scolded he thought to himself, "This is no good". And thus began Haru's adventure to regain his true self! The curtain unveils on an other world "redo" fantasy life!</p>
-            </figcaption>
-          </figure>
+        <li class="one_third first">
+          <a id="first_novel"  href="#"><img src="assets/images/cover1.png" alt=""></a>
+            
+          
         </li>
+        <li class="one_third">
+         <hr class="btmspace-50" style= "visibility: invisible; border: 0;">
+         <hr class="btmspace-50" style= "visibility: invisible; border: 0;">
+
+          <h1 style= "color: green; font-weight: bold;"> The Bansished Sage Who Escaped his Childhood Friend</h1>
+         <hr class="btmspace-50">
+          
+          <h2><em>Translator: Shiny💖 </em></h2>
+          <p>Wizard Haru spent his days being abused by the hero, his childhood friend Leticia. But one day while being scolded he thought to himself, "This is no good". And thus began Haru's adventure to regain his true self! The curtain unveils on an other world "redo" fantasy life!</p>
+          
+          
+        </li>
+        
+      </ul>
+      <hr class="btmspace-50">
+         <hr class="btmspace-50">
+         <hr class="btmspace-50">
+
+      <ul type="none">
+        <li class= "half"><h1>Table of Contents</h1></li>
+        <ul type= "none">
+          {% for item in site.posts reversed%}
+          <li><a href= "{{item.url}}"><p style= "margin: 0; clear: left;">{{item.description}}. {{item.subtitle}}</p></a><br/>
+           </li>
+            {%endfor%}
+        </ul>
       </ul>
     </section>
     <!-- ################################################################################################ -->
@@ -81,25 +123,14 @@
     <div class="clear"></div>
   </main>
 </div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
 
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
 
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
 
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-
-   
     <!-- ################################################################################################ -->
-
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
@@ -121,6 +152,7 @@
     <!-- ################################################################################################ -->
     <hr class="btmspace-50">
     <!-- ################################################################################################ -->
+    
    
     <!-- ################################################################################################ -->
   </footer>
@@ -131,8 +163,8 @@
 <div class="wrapper row5">
   <div id="copyright" class="hoc clear"> 
     <!-- ################################################################################################ -->
-    <p class="fl_left">Copyright &copy; 2021 - All Rights Reserved </p>
-    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
+     <!-- ################################################################################################ -->
   </div>
 </div>
 <!-- ################################################################################################ -->
@@ -142,6 +174,6 @@
 <!-- JAVASCRIPTS -->
 <script src="assets/scripts/jquery.min.js"></script>
 <script src="assets/scripts/jquery.backtotop.js"></script>
-<script src="assets/scripts/jquery.mobilemenu.js"></script>
+<script src= "assets/scripts/jquery.mobilemenu.js"></script>
 </body>
 </html>
