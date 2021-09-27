@@ -10,6 +10,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="./assets/css/style.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="./assets/css/newsletter.css" type= "text/css">
 <link rel="icon" href="assets/images/favicon.ico" />
 <script src="https://kit.fontawesome.com/2c2aaca7e9.js" crossorigin="anonymous"></script>
 </head>
@@ -36,7 +37,7 @@
           <ul>
             <li><a href="./bs">The Bansished Sage Who Escaped his Childhood Friend</a></li>
           </ul>
-        
+          <li> <a class="dark-mode" href="#">Dark Mode <i class="fas fa-toggle-off"></i></a></li>
       </ul>
     </nav>
   </section>
@@ -50,7 +51,8 @@
   </div>
 </div>
 <!-- End Top Background Image Wrapper -->
-<div class="wrapper row3">
+<div class= "row3-dark">
+  <div class="wrapper row3">
   <main class="hoc container clear"> 
     <!-- main body -->
     <div class="content three_quarter first"> 
@@ -65,7 +67,11 @@
         <a href="{{ page.next.url }}" class="btn">Next</a>
         {% endif %}
     </div>
+ 
+      {% include newsletter.html %}
+    
     {% include disqus.html %}
   </main>
+</div>
 </div>
 {% include footer.html %}

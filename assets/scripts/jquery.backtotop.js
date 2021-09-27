@@ -20,3 +20,11 @@ jQuery(window).scroll(function () {
         jQuery("#backtotop").removeClass("visible");
     }
 });
+
+$('.dark-mode').on('click',()=>{
+    $('.fas').toggleClass('fa-toggle-off');
+    $('.fas').toggleClass('fa-toggle-on');
+    $('.wrapper').toggleClass('row3')
+    $('.wrapper').toggleClass('.row3-dark');
+    $('.newsletter').toggleClass('newsletter-dark');
+})

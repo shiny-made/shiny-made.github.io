@@ -525,3 +525,12 @@ p{
 	border-radius: 100px;
 }
 
+.fa-toggle-off{
+	font-size: 15px;
+	margin: 0 0 0 10px;
+}
+
+.row3-dark{
+	color: white;
+	background-color: #0b1320;
+}
